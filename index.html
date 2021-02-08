@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML|CSS|Informazy</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="navbar"> 
+		<div class="sidebar">
+		<header>Informazy</header>
+	<ul>
+		<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+		<li><a class="nav-link" href="#BasicHTML">Basic Html</a></li>
+		<li><a class="nav-link" href="#BasicCSS">Basic Css</a></li>
+		<li><a class="nav-link" href="#Reference">References</a></li>
+		<li><a class="nav-link" href="#Help">Help</a></li>
+	</ul>
+	</div>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Intro">
+			<div id="Introduction">
+			<header><u class="underline">Introduction</u></header>
+			<article>
+				<p>The Informazy is for  information and learnings for coding especially when you are a  beginner. All contents here can help you improve your skills in reading and learning. <br> This site contains tutorials, references, and examples to avoid common errors.<br></p>
+					<p class="subintro">Launched February of 2021, Informazy wss founded by the great Loren Angelu. <br> Happy coding!</p>
+				</div>
+			</article>
+		</section>
+		<section class="main-section" id="Html">
+			<div id="BasicHTML">
+				<header><u class="underline">Basic HTML</u></header>
+					<article>
+						<p>
+						 Hyper Text Markup Language, or better known as HTML, is a markup language to describe the structure of a web page much like a skeleton of a human body. <br> An array of unique syntax of elements are used to organize and give information about the content to the web browser. Opening and closing tags are used on elements that surround content and gives meaning to it. There are different element tags that have different functions and uses that could include paragraphs, headers, links or lists.	
+						</p>
+						<p>
+							This section references how to use HTML elements to give structure and meaning to your web content. Listed below are the topics covered for HTML and HTML5.
+						</p>
+						<br>
+        					<h2 id="the_declaration">The Declaration</h2>
+        					<p>At the start of your coding document you need to declare the language being used so the browser knows what version of HTML you're using and is able to read it. Most major browsers now support the latest installment, HTML5. Below is how you declare the language, in this case it'll be HTML5. This version is declared with the &lt;!DOCTYPE html&gt; tag. Don't forget the &lt;html&gt; tags that wrap around your html code!</p>
+        				<code>
+								&lt;!DOCTYPE html&gt;<br>
+									&lt;html&gt;<br>
+    								... &lt;!-- Your code here --&gt;<br>
+  									&lt;/html&gt;
+          				</code>
+        						<br>
+        					<h2 id="comments">Comments</h2>
+        					<p>Comments are a way to leave notes and reminders about the code for yourself or another programmer so they understand quickly what they are reading. Comments don't affect the code itself, they appear within the typed code but are not generated on the page. It's also a convenient way to make code inactive without having to delete it. <br> Comments start with an opening tag of &lt;!-- and close with a --&gt; when finished.
+        	<code>
+			&lt;!-- This is a single line comment --&gt;<br>
+        	&lt;!-- This is a multiple line comment --&gt;<br>
+        	&lt;!DOCTYPE html&gt;<br>
+  			&lt;html&gt;<br>
+    		&lt;body&gt; &lt;!-- Main Body --&gt;<br>
+      		&lt;div&gt; &lt;!-- Header Container --&gt;<br>
+        	&lt;h1&gt;Hello World!&lt;/h1&gt; &lt;!-- Heading Option 1 --&gt;<br>
+        	&lt;!-- &lt;h2&gt;Hello World!&lt;/h2&gt; Heading Option 2 --&gt;<br>
+      		&lt;/div&gt;<br>
+    		&lt;/body&gt;<br>
+  			&lt;/html&gt;<br>
+        	</code>
+        	<br>
+        		<h2 id="the_head">The Head</h2>
+        		<p>Any markup with information about your page would go into the head tag, which is essentially the header of the page. Metadata elements such as the &lt;link&gt; ,&lt;meta&gt; ,&lt;title&gt; , and &lt;style&gt; usually go inside the &lt;head&gt; element.</p>
+
+        	 <code>
+			&lt;!DOCTYPE html&gt;<br>
+  			&lt;html&gt;<br>
+    		&lt;head&gt;<br>
+      		&lt;title&gt;...&lt;/title&gt; &lt;!-- Your title here --&gt;<br>
+      		&lt;link...&gt; &lt;!-- Your link here --&gt;<br>
+   			&lt;/head&gt;<br>
+  			&lt;/html&gt;<br>
+        	</code>
+        	<br>
+        <h2 id="the_main_body">The Main/Body</h2>
+        <p>All markups containing content that make up the page would go into the main or the body tag. The body element acts as the body of all of the content of the page while the main element is inside of the body and contains the page's main content. All elements not part of the header or footer usually go inside one of these elements.
+        <code>
+		&lt;!DOCTYPE html&gt;<br>
+  		&lt;html&gt;<br>
+    	&lt;head&gt;<br>
+      	... &lt;!-- Your metadata here --&gt;<br>
+    	&lt;/head&gt;<br>
+    	&lt;body&gt;<br>
+      	... &lt;!-- Some content here --&gt;<br>
+      	&lt;main&gt;<br>
+        ... &lt;!-- Main content here --&gt;<br>
+      	&lt;/main&gt;<br>
+      	... &lt;!-- Maybe some more content here --&gt;<br>
+    	&lt;/body&gt;<br>
+  		&lt;/html&gt;<br>
+        </code>
+        <br>
+        <h2 id="headings">Headings</h2>
+        <p>The heading element tells the browser about the structure of the website. &lt;h1&gt; elements are often used for main headings as they are largest of the headings. &lt;h2&gt; through &lt;h6&gt; elements are generally used for subheadings to indicate different or new sections of your content.</p>
+         <code id="heading_code">
+&lt;h1&gt;Heading 1&lt;/h1&gt;<h1>Heading 1</h1>
+&lt;h2&gt;Heading 2&lt;/h2&gt;<h2>Heading 2</h2>
+&lt;h3&gt;Heading 3&lt;/h3&gt;<h3>Heading 3</h3>
+&lt;h4&gt;Heading 4&lt;/h4&gt;<h4>Heading 4</h4>
+&lt;h5&gt;Heading 5&lt;/h5&gt;<h5>Heading 5</h5>
+&lt;h6&gt;Heading 6&lt;/h6&gt;<h6>Heading 6</h6>
+	</code>
+        <br>
+        <h2 id="paragraphs">Paragraphs</h2>
+        <p>Paragraphs are the preferred element for communicating text on websites. Just like in real writing, &lt;p&gt; tags organize and contain the meaning of the content within the body of the page.
+         <code>
+		&lt;body&gt;<br>
+  		&lt;main&gt;<br>
+    	&lt;h1&gt;Your Title Here&lt;/h1&gt;<br>
+      	&lt;p&gt;This is a paragraph. Your content and talking points go here.&lt;/p&gt;<br>
+  		&lt;/main&gt;<br>
+		&lt;/body&gt;<br>
+        </code>
+        <br>
+        <h2 id="lists">Lists</h2>
+        <p>There are special elements that let you create lists and there are two kinds of lists that can be made. Unordered lists use the &lt;ul&gt; tag and is a general list that includes bullet points. An ordered list uses the &lt;ol&gt; tag and is used for instructions or anything that needs listed by steps or in a particular order. Don't forget each item in either list set needs a &lt;li&gt; tag to be recorded!
+        <code>
+		&lt;main&gt;<br>
+  		&lt;h1&gt;Your Title Here&lt;/h1&gt;<br>
+    	&lt;ul&gt;  &lt;!-- Unordered List --&gt;<br>
+      	&lt;li&gt;List item a&lt;/li&gt;<br>
+      	&lt;li&gt;List item b&lt;/li&gt;<br>
+      	&lt;li&gt;List item c&lt;/li&gt;<br>
+    	&lt;/ul&gt;<br>
+    	&lt;ol&gt;  &lt;!-- Ordered List --&gt;<br>
+      	&lt;li&gt;List item 1&lt;/li&gt;<br>
+      	&lt;li&gt;List item 2&lt;/li&gt;<br>
+      	&lt;li&gt;List item 3&lt;/li&gt;<br>
+    	&lt;/ol&gt;<br>
+		&lt;/main&gt;<br>
+        </code>
+        <br>
+        <h2 id="divs">Divs</h2>
+        <p>The &lt;div&gt; element, also known as the division element, is a general purpose container to contain and organize other elements of the page. &lt;div&gt; is the most commonly used HTML element because of its versatility. Other container elements were introduced with the induction of HTML5. These have more specific uses throughout the page, they include the &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt; and &lt;footer&gt; elements. Below is an example of how these would typically be inputed.
+         <code>
+		&lt;body&gt;<br>
+  		&lt;header&gt;<br>	
+    	...  &lt;!-- Header contains title info --&gt;<br>
+  		&lt;/header&gt;<br>
+  		&lt;main&gt;<br>
+    	&lt;nav&gt;<br>
+      	...  &lt;!-- Nav contains navigation links --&gt;<br>  
+    	&lt;/nav&gt;<br>
+    	&lt;aside&gt;<br>
+      	...  &lt;!-- Aside contains side info and/or links --&gt;<br>
+    	&lt;/aside&gt;<br>
+    	&lt;section&gt; <br>
+      	...   &lt;!-- Section contains a main part of the page --&gt;<br>
+      	&lt;article&gt;<br>
+        ...  &lt;!-- Article contains worded content --&gt; <br>   
+      	&lt;/article&gt;<br>
+    	&lt;/section&gt;<br>
+  		&lt;/main&gt;<br>
+  		&lt;footer&gt;<br>
+    	...   &lt;!-- Footer contains copyright info and links --&gt;<br>  
+  		&lt;/footer&gt;<br>
+		&lt;/body&gt;<br>
+        </code>
+        <br>
+        <h2 id="images_video">Images/Video</h2>
+        <p>Images can be added to a website using the &lt;img&gt; element. This element uses the src attribute to specify the images URL to grab the media and display it on the page. The tag is self closing, so a closing tag is not needed for this one. All image elements must have an alt attribute, which is used for screen readers to improve accessibility and is displayed if the image fails to load. Below is an example of how to do this.
+        <code>
+		&lt;img src="https://www.the-images-URL-goes-here.com" alt="Text explaining what the image is."&gt;        
+        </code>
+        <p>Video clips can also be added to a website using the &lt;video&gt; element. Unlike the &lt;img&gt;, video uses a separate &lt;source&gt; tag that retrives the video's URL to be played. Videos also use height and width attributes within the &lt;video&gt; tag. Other optional attributes that can be added are controls, which allow the user to pause, play, increase/decrease the volume, etc, and autoplay which allows the video to automatically play when the user sees it on the page. Don't forget to add the type of video that is playing! The main types of video are mp4, webm and ogg. Below is how you would set up video in HTML.</p>
+        <code>
+		&lt;video width="width-here" height="height-here" controls autoplay&gt;
+  		&lt;source src="https://www.video-url-goes-here.com" type="video/mp4"&gt;
+  		&lt;!-- Replace mp4 with webm or ogg when appropriate --&gt;
+		&lt;/video&gt;
+        </code> 
+        <br>
+        <h2 id="anchors">Anchors</h2>
+        <p>Anchor elements, &lt;a&gt;, are used to link to content internally or externally from the current page. The href attribute is used to call the URL that links to what you want. There are many ways anchors can be used on the page, here are some examples.
+        <code>
+		&lt;!-- Anchor words to an external link --&gt;<br>
+		&lt;a href="https://www.link-url-goes-here.com"&gt;External Link&lt;/a&gt;<br>
+          
+		&lt;!-- Anchor that uses the target attribute to open up the link in a new tab --&gt;<br>
+		&lt;a href="https://www.link-url-goes-here.com" target="_blank"&gt;External Link in a New Tab&lt;/a&gt;<br>
+          
+		&lt;!-- Anchor an image to an external link --&gt;<br>
+		&lt;a href="https://www.link-url-goes-here.com"&gt;&lt;img src="https://www.image-url-goes-here.com" alt="Image description goes here"&gt;&lt;/a&gt;<br>
+          
+		&lt;!-- Anchor to jump to an internal section on the page --&gt;<br>
+		&lt;a href="#internal-section"&gt;Jump to internal section&lt;/a&gt;<br>
+		&lt;!-- On the section you want to jump to, add this line of code --&gt;<br>
+		&lt;a name="internal-section"&gt;&lt;/a&gt;<br>
+          
+		&lt;!-- Anchor with a dead link (#) for when stucture of the page is still needed without the specific URL yet --&gt;<br>
+		&lt;a href="#"&gt;Dead Link&lt;/a&gt;<br>
+        </code>
+        <br>
+        <h2 id="forms">Forms</h2>
+        <p>Web forms are a way to collect data and send them to a server using just HTML. These are useful for surveys and anything that involves inputs from a user. Here is how a web form is set up with different inputs types.
+         <code>
+		&lt;!-- This is the form element. This directs the data to a server. --&gt;<br>
+		&lt;form action="https://www.send-data-to-this-server.com"&gt;&lt;/form&gt;<br>
+          
+		&lt;!-- Within forms, inputs can be placed to collect data. Here is a text field with a placeholder the user can see in the field. Filling out the field can be optional by adding required. --&gt;<br>
+		&lt;form action="https://www.send-data-to-this-server.com"&gt;&lt;input type="text" placeholder="Enter Text Here" required&gt;&lt;/form&gt;<br>
+          
+		&lt;!-- How will the page know to accept the data? With a submit button of course. --&gt;<br>
+		&lt;form action="https://www.send-data-to-this-server.com"&gt;<br>
+  		&lt;input type="text placeholder="Enter Text Here" required&gt;<br>
+  		&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+		&lt;/form&gt;<br>
+        </code>
+        <br>
+        <h2 id="buttons">Buttons</h2>
+        <p>Buttons are another way of collecting data from a user who is prompted with a set of options to input. These can come in a variety of styles, the submit type was shown in the form section. The &lt;label&gt; element is used to nest the buttons in. A name attribute is used to correlate the button with the sent data in a form. How to set up a set of buttons on a page is shown below.
+        <code>
+		&lt;!-- Radio: round buttons that are filled when selected --&gt;<br>
+		&lt;label&gt;<br>
+  		&lt;input type="radio" name="option1-option2"&gt;Option 1<br>
+  		&lt;input type="radio" name="option1-option2"&ft;Option 2<br>
+		&lt;/label&gt;<br>
+          
+		&lt;!-- Checkbox: square buttons that can be checked/unchecked --&gt;<br>
+		&lt;label&gt;<br>
+  		&lt;input type="checkbox" name="check1-check2"&gt;Check 1<br>
+  		&lt;input type="checkbox" name="check1-check2"&gt;Check 2<br>
+		&lt;/label&gt;<br>
+          
+		&lt;!-- Both radio and checkboxes can be preselected by adding checked --&gt;<br>
+  		&lt;label&gt;<br>
+    	&lt;input type="radio" name="option1-check2" checked&gt;Option 1<br>
+    	&lt;input type="checkbox" name"option1-check2" checked&gt;Check 2<br>
+  		&lt;/label&gt;<br>
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="Css">
+    	<div id="BasicCSS">
+    		<header><u class="underline">Basic CSS</u></header>
+    		<article>
+    			<p>Cascading Style Sheets, better known as CSS, tells the browser how to display the HTML framework on the page. This language controls the colors, fonts, positioning, spacing, sizing, decorations and transistions of every element. There are three main ways for these languages to communicate with each other to properly display a webpage. Inline styles can be directly written in HTML within each element with the style attribute. Another way CSS rules can be applied to HTML is by adding &lt;style&gt; tags in the HTML document and writing the code withen those. <br> The most used method is to write the CSS code in a external style sheet and have the HTML document reference that sheet. This improves readability and reusability of the code. The best way to remember how these languages function is reffering to the HTML as the skeleton and CSS as the skin of a site.</p>
+    			<p>This section references how to use CSS to give color and life to your web content. Listed below are the topics covered for basic CSS and CSS3.</p>
+
+    			<h2 id="styling">Styling</h2>
+        		<p>With CSS there are many properties that one can use to change the way an element looks on the page. This is all done in a separate .css file or inside the &lt;style&gt; elements using CSS selectors, classes, ids, and if need be, inline styles outside of the &lt;style&gt; elements. The order of these styling methods also indicate which take precedence when two or more are used. Classes override element selectors, ids over classes and if all else fails, inline styling and adding !important to a property have the final say in an elements style.
+
+        		<p>Here are the basic methods of incorporating CSS into a page.</p>
+        <code>
+		/* Element Selector - selects all of the called element */<br>
+		&lt;style&gt; <br>         
+		p {<br>
+  			...       <br> 
+		}<br>
+		&lt;/style&gt;<br>
+		&lt;p&gt;...&lt;/p&gt;<br>
+
+          
+		/* Class Selector - selects all of the called class */<br>
+		&lt;style&gt;          <br>
+		.class1 {<br>
+ 		 ...        <br>  
+		}<br>
+			&lt;/style&gt;<br><br>
+			&lt;h1 class="class1"&gt;...&lt;/h1&gt;  <br> 
+          
+
+		/* Id Selector - selects elements with the unique id attribute */<br>
+		&lt;style&gt;<br>
+		#id1 {<br>
+  		... !important         <br>
+		}<br>
+		&lt;/style&gt;<br>
+		&lt;div id="id1"&gt;...&lt;/div&gt;       <br>   
+          
+          
+		/* Inline Selector - selects individual elements - NOT RECOMMENDED */<br>
+		&lt;h2 style="color: red;"&gt;...&lt;/h2&gt;          <br>
+        </code>
+        <br>
+        <h2 id="import">Import</h2>
+        <p>Using import in CSS is very similar to using the &lt;link&gt; element in HTML. One of the basic uses of it, just like the &lt;link&gt; element, is to import a font family more than likely from Google. Shown below is an example of importing the Google font Open Sans.
+        	 <code>
+			&lt;style&gt;
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+		&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="units">Units</h2>
+        <p>There are two main types of units that measure length, absolute and relative. Pixels are a type of relative length unit, mostly used for screen resolutions and sizing, that tells the browser how to size or space an object. This is the most widely used unit, but there are more units that can be used. Em or rem are more relative length units that are relative to another length. Ems are based on the size of an element's font. Absolute units are tied to a physical unit of length such as inches (in) and millimeters (mm).
+          <code>
+		&lt;style&gt;<br>
+  		html {<br>
+    	color: black;<br>
+    	width: 1000px;  /* Pixels */<br>
+    	length: 10in; /* Inches */<br>
+    	font-size: 2em; /* Ems */      <br>
+    	line-height: 1rem; /* Rems */   <br>   
+		}
+		&lt;/style&gt;  <br>        
+        </code>
+        <br>
+        <h2 id="csscomments">Comments</h2>
+        <p>Like in HTML, comments are a way to leave notes and reminders about the code for yourself or another programmer so they understand quickly what they are reading. They are also used to prevent the browser from interpreting parts of the style sheet. Comments start with an opening tag of /* and close with a */ when finished.
+        <code>
+		&lt;style&gt;          
+		/* This is a single line comment */<br>
+          
+		/* This is a
+		multiple line comment */
+		&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="colors">Colors</h2>
+        <p>The color of text, backgrounds, objects, borders, you name it can be colored with CSS. The main colors, such as red, blue, green, etc can be declared by simply inputing those in your CSS code. Another method for declaring a color is using the colors hexadecimal code, or hex number. Hex code gives the user a huge range of colors to use and is done by using the hash symbol (#) followed by six numbers and letters. An abbriviated version can also be used by the hash symbol followed by only three numbers and letters, however, this will yield a smaller group of colors. Another way to represent colors in CSS is by using RGB values. RGB uses three numbers from 0 to 255 that measures and mixes the three primary colors to make all of the colors. There is a lot that can be covered and said about colors using CSS so additional references are posted to further explore this vast topic.
+        <code>
+h1 {<br>
+  color: red;       <br> 
+}<br>
+.title-background {<br>
+  color: black;     <br>   
+}  <br>
+#special-font {<br>
+  color: blue;    <br>   
+}  <br>
+          
+ 
+/* Hex */
+h1 {<br>
+  color: #ff0000;       <br> 
+}<br>
+.title-background {<br>
+  color: #000000;    <br>    
+}  <br>
+#font {<br>
+  color: #0000ff; <br>      
+}  <br>
+          
+          
+/* Abbreviated Hex Codes */<br>
+h1 {<br>
+  color: #f00;        <br>
+}<br>
+.title-background {<br>
+  color: #000;      <br>  
+}  <br>
+#font {<br>
+  color: #00f;       <br>
+}  <br>
+          
+          
+/* RGB Values */<br>
+h1 {<br>
+  color: rgb(255,0,0); <br>       
+}<br>
+.title-background {<br>
+  color: rgb(0,0,0);  <br>      
+}  <br>
+#font {<br>
+  color: rgb(0,0,255);      <br> 
+}     <br>       
+        </code>
+        <br>
+        <h2 id="fonts">Fonts</h2>
+        <p>There are many desired characteristics we want to see from the fonts of a webpage, CSS makes it possible to achieve these. The family, style, size, color, and weight can all be modified for desired looks and effects. Below are many examples how to change fonts in CSS.
+        <code>
+/* Font Styles */
+body {<br>
+  font-style: normal; /* The browser displays a normal font style, this is default */  <br>      
+}<br>
+.font-style-1 {<br>
+  font-style: italic; /* The browser displays an italic font style */<br>
+}<br>
+#font {<br>
+  font-style: oblique; /* The browser displays an oblique font style */    <br>   
+}  <br>
+          
+          
+/* Font Weights */
+html {<br>
+  font-weight: normal; /* Defines normal characters, this is default */  <br>      
+}          <br>
+.bold-font {<br>
+  font-weight: bold; /* Defines thick characters */      <br>  
+}   <br>
+#bolder-font {<br>
+  font-weight: bolder; /* Defines thicker characters */    <br>    
+}   <br>
+p {<br>
+  font-weight: lighter; /* Defines lighter characters */   <br>    
+}   <br>
+.thickness-selector {<br>
+  font-weight: 100; /* 100 - 900 for custom thickness. 400 is the same as normal, 700 the same as bold */   <br>     
+}          <br>
+          
+          
+/* Font Sizes */<br>
+h1 {<br>
+  font-size: 16px; /* Defines normal character size using pixels */      <br>  
+} <br>
+.em-size {<br>
+  font-size: 2em; /* Defines font size in ems */  <br>      
+}         <br> 
+          
+          
+/* Font Families */<br>
+h2 {<br>
+  font-family: Sans-Serif; /* Defines the Sans-Serif font family */    <br>    
+}          <br>
+.font-degrade {<br>
+  font-family: Monospace, Sans-Serif; /* Defines what font to degrade to if the browser or local machine doesn't have the former in the library */   <br>
+}       <br>   
+
+          
+/* Font In One Declaration */<br>
+body {<br>
+  font: italic bold 12px arial; /* (font-style font-weight font-size font-family) <br> All four properties can be declared on one line of code */  <br>      
+}         <br>
+
+        </code>
+        <br>
+        <h2 id="images">Images</h2>
+        <p>CSS has properties called width and height that controls an elements width and height. Just like with fonts, pixels are used to control these aspects of the element. Below is an example of resizing an image.
+
+        <code>
+&lt;style&gt;          
+  img {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    max-height: auto;      
+}
+&lt;/style&gt;          
+        </code>
+        <br>
+        <h2 id="borders">Borders</h2>
+        <p>Borders can be placed around elements to give it a more define presence or to keep objects orderly on the webpage. They come in many styles, shapes and sizes. Below are a few examples of using borders in CSS.
+
+         <code>
+&lt;style&gt;          
+.border-example {
+  border-color: black; /* Defines the color of the border */ <br>
+  border-width: 7px; /* Defines the width of the border, in pixels */<br>
+  border-style: solid; /* Defines the style of the border */  <br>
+  border-radius: 10px; /* Defines how round the corners of the border are */<br>
+  border-radius: 50%; /* When used as a percentage, border-radius creates a circular border around the element */  <br>      
+}
+          
+      
+.border-example-2 {<br>
+  border: 5px dotted yellow; /* Border properties can be written on one like like shown */     <br>   
+}          <br>
+&lt;/style&gt;<br>          
+        </code>
+        <br>
+        <h2 id="background">Background</h2>
+        <p>An elements background characteristic can be set up using the background property. Much like with other elements, a backgrounds color, position, display and image overlay can be modified. Examples are shown below on CSS backgrounds.
+
+         <code>
+&lt;style&gt;
+  .background-1 {<br>
+    background-color: white; /* Specifies the background color */<br>
+    background-image: url("https://www.image-url-here.com"); /* Specifies the url for the background image overlay */<br>
+    background-repeat: no-repeat; /* Specifies how and if the background repeats */<br>
+    background-position: right top; /* Specifies the position of the background on the screen */   <br> 
+}        
+  .background-2 {<br>
+    background: red url("https://www.image-url-here.com") repeat-x bottom left; /* Like with many elements, all of the properties can be written on one line */     <br>
+}        
+        </code>
+        <br>
+        <h2 id="padding">Padding</h2>
+        <p>An element's padding controls the amount of space between the element's content and its border. When you increase padding, it increases the distance between the text, padding, and border around it. Sometimes you will want to customize an element so that it has different padding on each of its sides. Padding-top, padding-right, padding-bottom, and padding-left each control the padding on the different four sides of the element. The short hand of applying different padding to the sides is using clockwise notation using just the padding attribute.
+
+           <code>
+/* Normal padding */          
+.box1 {<br>
+  padding: 15px;    <br>    
+}          
+          
+          
+/* Specific padding */<br>
+.box2 {<br>
+   padding-top: 15px;<br>
+   padding-right: 7px;<br>
+   padding-bottom: 3px;<br>
+   padding-left: 20px;  <br>     
+}
+          
+          
+/* Shorthand clockwise notation */
+.box3 {<br>
+   padding: 15px 7px 3px 20px;  <br>     
+}          
+        </code>
+        <br>
+        <h2 id="margin">Margin</h2>
+        <p>An element's margin controls the amount of space between an element's border and surrounding elements. When you increase an elements margin, it will increase the distance that distance. Just like with padding, you can control the top, right, bottom, and left margins separately. Clockwise shorthand notation can also be used with margins.
+
+        <code>
+/* Normal margin */    <br>      
+.box1 {<br>
+  margin: 15px;      <br>  
+}          <br>
+          
+          
+/* Specific margin */<br>
+.box2 {<br>
+   margin-top: 15px;<br>
+   margin-right: 7px;<br>
+   margin-bottom: 3px;<br>
+   margin-left: 20px; <br>      
+}
+          <br>
+          
+/* Shorthand clockwise notation */<br>
+.box3 {<br>
+   margin: 15px 7px 3px 20px; <br>      
+}          
+        </code>
+        <br>
+      </article>
+    </section>
+    <section class="main-section" id="Html">
+		<div id="Reference">
+			<header><u class="underline">References</u></header><br>
+				<article>
+					<ol>
+    				<li><a class="source" href="https://www.w3schools.com/html/" target="_blank"> Tutorial on Html</a></li>
+    			</ol>
+    		</article>
+    			<article>
+					<ol>
+    				<li><a class="url" href="https://www.w3schools.com/Css"> Tutorial on Basic CSS</a></li>
+    			</ol>
+    		</article>
+    		<article>
+    			<ol>
+    				<li><a class="url" href="https://www.phptpoint.com/html-tutorial-pdf/">Let's get started on HTML</a></li>
+    			</ol>
+    		</article>
+    		<article>
+    			<ol>
+    				<li><a class="url" href="https://www.phptpoint.com/css-tutorial/">What is CSS</a></li>
+    			</ol>
+    		</article>
+    	</div>
+    </section>
+    <section class="main-section" id="help">
+		<div id="Help">
+			<header><u class="underline">Help</u></header>
+			<p class="message">Do you need a professional assistant to your problems? Message us!</p>
+    		<form action="https://www.freecodecamp.com/email-submit" id="form">
+    		<input type="email" id="email" size=40px target="_blank" placeholder="eg. JuanDelaCruz@gmail.com" name="email" required><input type="submit" id="submit" value="Sign up">
+    		<textarea class="textarea" placeholder="Type your message here :)"></textarea>
+
+
+  	</form>
+		</div>
+	</section>
+	</main>
+</body>
+</html>

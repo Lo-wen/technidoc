@@ -1,0 +1,139 @@
+body{
+	background-color: #white;
+}
+
+*{
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+	text-decoration: none;
+}
+
+.sidebar{
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	background: #222831;
+}
+
+.sidebar header{
+	font-size: 33px;
+	color: #d9dab0;
+	margin-left: -3px;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 70px;
+	background: #719fb0;
+}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 16px;
+	color: #d9dab0;
+	padding-left: 43px;
+	box-sizing: border-box;
+	border-top: 1px solid #f4f5db;
+	border-bottom: 1px solid black;
+	font-family: 'Montserrat', sans-serif;
+	transition: .4s;
+}
+
+ul li:hover a{
+	padding-left: 50px;
+}
+
+.sidebar ul a i{
+	margin-right: 16px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 311px;
+  margin-bottom: 109px;
+  padding: 23px;
+}
+
+.Introduction{
+	font-size: 20px; 
+	margin-left: 160em;
+	border-bottom: solid black; 
+}
+
+article{ 
+	font-size: 25px;
+	margin-top: 50px;
+	line-height: 50px;
+}
+
+.main-section header{
+  margin: 13px;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 80px;
+}
+
+
+#main-doc header {
+  text-align: left;
+  margin: auto;
+  margin-top: 110px;
+}
+
+p {
+	margin-left: 23px;
+    font-size: 19px;
+    width: 80%;
+    max-width: 100%;
+    line-height: 58px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+u{
+	text-decoration-line: underline;
+	text-decoration-color: black;
+}
+
+code {
+ display: block;
+ background-color: #FFFAFA;
+ color: black;
+ position: relative;
+ word-break: normal;
+ width: 80%;
+ max-width: 90%
+ line-height: 3;
+ font-size: 13px;
+ padding: 13px;
+ margin: 10px;
+ margin-left: 50px;
+ border-radius: 8px;
+}
+
+h2{
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	line-height: 10;
+}
+
+.textarea{
+	height: 125px;
+    width: 47em;
+    margin-inline: -1em;
+    margin-left: 2em;
+    margin-top: 15px;
+}
+
+#email{
+	margin-left:15em;
+	margin-inline: 2em;
+}
